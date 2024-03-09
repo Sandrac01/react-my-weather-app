@@ -6,12 +6,12 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Weather />
+       <Weather />
       </header>
       <main>
         <div className="current-weather">
           <h1>
-            <strong>Paris</strong>
+            <strong>{""}</strong>
           </h1>
           Tuesday 10:00
           <br />
@@ -31,23 +31,119 @@ function App() {
           .Wind: 10km/h
         </h4>
       </div>
-      <footer className="footer" mt-5>
+      <div className="weather-days-container d-flex">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-2">
+              <div className="weather-app-days" id="days">
+                {"Sunday"}
+              </div>
+              <div className="weather-app-temperature" id="temperature">
+                {``}
+                <span className="weatehr-app-unit">°C</span>
+              </div>
+              <div id="icon">{"icon"}</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-2">
+              <div className="weather-app-days" id="days">
+                {"Monday"}
+              </div>
+              <div className="weather-app-temperature" id="temperature">
+                {``}
+
+                <span className="weatehr-app-unit">°C</span>
+              </div>
+              <div id="icon">{}icon</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-start align-items-start ">
+            <div class="col-2">
+              <div className="weather-app-days" id="days">
+                {"Tuesday"}
+              </div>
+              <div className="weather-app-temperature" id="temperature">
+                {``}
+
+                <span className="weatehr-app-unit">°C</span>
+              </div>
+              <div id="icon">{"icon"}</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-2">
+              <div className="weather-app-days" id="days">
+                {"Wednesday"}
+              </div>
+              <div className="weather-app-temperature" id="temperature">
+                {``}
+
+                <span className="weatehr-app-unit">°C</span>
+              </div>
+              <div id="icon">{"icon"}</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-2">
+              <div className="weather-app-days" id="days">
+                {"Thursday"}
+              </div>
+              <div className="weather-app-temperature" id="temperature">
+                {``}
+                <span className="weatehr-app-unit">°C</span>{" "}
+              </div>
+              <div id="icon">{"icon"}</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-2">
+              <div className="weather-app-days" id="days">
+                {"Friday"}
+              </div>
+              <div className="weather-app-temperature" id="temperature">
+                {``}
+                <span className="weatehr-app-unit">°C</span>{" "}
+              </div>
+              <div id="icon">{``}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <footer className="footer">
         This project was coded by
         <a href="https://github.com/Sandrac01" target="_blank">
           {" "}
           Sandra Chinouya
         </a>
         , is
-        <a href="https://github.com/matthieua/meteo" target="_blank">
+        <a
+          href="https://github.com/Sandrac01/react-my-weather-app"
+          target="_blank"
+        >
           open-sourced on GitHub
         </a>
         and
-        <a href="https://meteo-shecodes-app.netlify.app/" target="_blank">
+        <a href="" target="_blank">
           hosted on Netlify
         </a>
       </footer>
     </div>
   );
-}
-
+  }
 export default App;
